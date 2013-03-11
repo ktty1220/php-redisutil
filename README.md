@@ -16,7 +16,7 @@ Redisは非常に便利なKVSですが、KEYに対するVALUEに様々な型が�
 Redisへの接続には[phpredis](https://github.com/nicolasff/phpredis/)が必要なので、別途インストールしてください。
 
 * Linux版は上記リンク先のインストール方法に従い、インストールしてください。
-* Windows版は上記リンク先のDownloadsタブからコンパイル済みのDLLをダウンロードできます。
+* Windows版は上記サイトからコンパイル済みのDLLを[ダウンロード](https://github.com/nicolasff/phpredis/downloads)できます。
 
 拡張モジュールのインストールの仕方については割愛します。
 
@@ -110,7 +110,7 @@ RedisUtilのインスタンスを作成します。引数には接続設定を�
 
 あいまいさ回避のため、Redisに保存する時の型を `$type`で指定する必要があります。ただしstring型の場合は省略できます。
 
-パラメータの不備があると`RedisUtilException`例外が発生します。エラーの詳細は例外を補足したブロックで`RedisUtilException`のエラー情報を参照してください。
+パラメータの不備があると`RedisUtilException`例外が発生します。エラーの詳細は例外を捕捉したブロックで`RedisUtilException`のエラー情報を参照してください。
 
 #### サンプル
 
@@ -355,4 +355,3 @@ Windows及びLinux(ubuntu、CentOS)の以下の環境で開発、動作確認を
 [MIT license](http://www.opensource.org/licenses/mit-license)で配布します。
 
 &copy; 2012 [ktty1220](mailto:ktty1220@gmail.com)
-
